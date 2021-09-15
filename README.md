@@ -2,9 +2,6 @@
 
 Code for RnG-KBQA: Rank-and-Generate Approach for Question Answering over Knowledge Base.
 
-## For Semih
-
-To make release version. Clone a **NEW** repo, and run `sh prepare_release.sh`, it will generate a `release` code repo.
 
 ## Requirements
 
