@@ -241,3 +241,12 @@ You can then use official WebQSP (only modified in I/O) evaluate script to run e
 
 #### Training Models
 We already attached pretrained-models ready for running inference. If you'd like to train your own models please checkout the `README` at `/WebQSP` folder.
+
+
+## Questions?
+For any questions, feel free to open issues, or shoot emails to
+- Semih Yavuz (syavuz@salesforce.com)
+- [Xi Ye](https://www.cs.utexas.edu/~xiye/)
+
+## License
+The code is released under BSD 3-Clause - see [LICENSE](LICENSE.txt) for details.
