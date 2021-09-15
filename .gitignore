@@ -171,5 +171,6 @@ dmypy.json
 
 *.txt
 !/requirements.txt
+!/LICENSE.txt
 
 .idea
