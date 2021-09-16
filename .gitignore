@@ -140,7 +140,6 @@ dmypy.json
 # !/GrailQA/misc/relation_freq.json
 /GrailQA/misc/grail_*
 !/GrailQA/outputs/grailqa_v1.0_demo*
-/GrailQA/outputs
 /GrailQA/models
 /GrailQA/ontology
 /GrailQA/executor
@@ -152,10 +151,10 @@ dmypy.json
 /GrailQA/run_ranker.py
 
 
-!/WebQSP/misc/webqsp_test_elq-5_mid.json
-!/WebQSP/misc/webqsp_train_elq-5_mid.json
-/WebQSP/misc/*.json
-/WebQSP/misc/*.bin
+#!/WebQSP/misc/webqsp_test_elq-5_mid.json
+#!/WebQSP/misc/webqsp_train_elq-5_mid.json
+#/WebQSP/misc/*.json
+#/WebQSP/misc/*.bin
 /WebQSP/outputs
 # !/WebQSP/outputs/
 /WebQSP/results
