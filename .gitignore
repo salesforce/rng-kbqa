@@ -136,7 +136,7 @@ dmypy.json
 /GrailQA/tmp*
 /GrailQA/feature_cache/*
 /GrailQA/entity_linker/BERT_NER/trained_ner_model*
-/GrailQA/entity_linker/data/*
+#/GrailQA/entity_linker/data/*
 # !/GrailQA/misc/relation_freq.json
 /GrailQA/misc/grail_*
 !/GrailQA/outputs/grailqa_v1.0_demo*

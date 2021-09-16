@@ -1,0 +1,1 @@
+Please download the mention information (including processed FACC1 mentions and all entity alias in Freebase) from https://1drv.ms/u/s!AuJiG47gLqTznjl7VbnOESK6qPW2?e=HDy2Ye.
