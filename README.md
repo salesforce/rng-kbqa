@@ -165,6 +165,9 @@ Please use `/WebQSP` as the working directory when running experiments on WebQSP
 
 Please download the [WebQSP](https://www.microsoft.com/en-us/download/details.aspx?id=52763) dataset and put the them under `outputs` so as to organize dataset as `outputs/WebQSP.train[test].json`.
 
+**Evaluation Script**
+
+Please make a copy of the official evaluation script (`eval/eval.py` in the [WebQSP](https://www.microsoft.com/en-us/download/details.aspx?id=52763) zip file) and put the script under this directory (`WebQSP`) with the name `legacy_eval.py`.
 
 **Model Checkpoints**
 
