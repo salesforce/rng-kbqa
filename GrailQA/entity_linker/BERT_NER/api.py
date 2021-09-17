@@ -1,3 +1,10 @@
+"""
+ Copyright 2021, Ohio State University (Yu Gu)
+ Yu Gu  <gu.826@osu.edu>
+ Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+"""
+
+
 from flask import Flask,request,jsonify
 from flask_cors import CORS
 

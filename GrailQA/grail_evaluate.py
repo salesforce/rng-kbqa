@@ -1,3 +1,10 @@
+"""
+ Copyright 2021, Ohio State University (Yu Gu)
+ Yu Gu  <gu.826@osu.edu>
+ Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+"""
+
+
 import json
 import argparse
 import networkx as nx
