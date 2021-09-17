@@ -11,6 +11,14 @@
  Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
 """
 
+"""
+We extend the origial Grail code by
+* adding classes for managing KB Cache
+  invloved classes: OntologyInfo, CacheBackend, FBCacheBase,
+                    FBLinkedRelationCache, FBTwoHopPathCache, FBQueryCache
+* adding cached enumeration methods for enumerating logical forms for both GrailQA and WebQAP
+  involved functions: grail_*, and webqsp_* (all lines from line 388 and below)
+"""
 
 import json
 from types import CodeType
