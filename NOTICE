@@ -4,7 +4,7 @@ of which copyright and license information are included below.
 =======================================================================
 Software under GrailQA
 =======================================================================
-Software modules under GrailQA/entity_linker, GrailQA/entity_linking,
+Software modules under GrailQA/entity_linker, GrailQA/entity_linking, framework/executor,
 GrailQA/grail_evaluate.py contains code from GrailQA (https://github.com/dki-lab/GrailQA)
 repo, which was previously licensed under Apache License Version 2.0:
 
