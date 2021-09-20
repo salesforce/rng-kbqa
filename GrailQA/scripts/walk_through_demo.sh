@@ -39,4 +39,4 @@ echo "\n------FINAL---------"
 python grail_evaluate.py outputs/grailqa_v1.0_demo_reference.json misc/grail_demo_final_results.txt
 
 
-echo "FINAL results should be em: 0.843, f1: 0.847"
+echo "FINAL results should be em f1 ~0.86"

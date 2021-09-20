@@ -94,7 +94,7 @@ class EntitySurfaceIndexMemory(object):
             for line in f:
                 n_lines += 1
                 if n_lines % 1000 == 0:
-                    logger.info('Bulding surface-forms (%s/59956)' % (n_lines//10000))
+                    logger.info('Bulding surface-forms (%s/5996)' % (n_lines//10000))
                 try:
                     cols = line.rstrip().split('\t')
                     surface_form = cols[0]

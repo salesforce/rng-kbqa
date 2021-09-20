@@ -84,7 +84,7 @@ We attach the cache of query results from KB, which can help save some time. Ple
 
 ## Demo for Checking the Pipeline
 
-It's recommended to use the one-click demo scripts first to test if everything mentioned above is setup correctly. If it successfully run through, you'll get a final F1 of 0.847. Please make sure you successfully reproduce the results on this small demo set first, as inference on `dev` and `test` can take a long time.
+It's recommended to use the one-click demo scripts first to test if everything mentioned above is setup correctly. If it successfully run through, you'll get a final F1 of around 0.86. Please make sure you successfully reproduce the results on this small demo set first, as inference on `dev` and `test` can take a long time.
 
 `sh scripts/walk_through_demo.sh`
 
