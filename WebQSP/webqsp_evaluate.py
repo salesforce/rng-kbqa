@@ -17,7 +17,7 @@ def main():
 
     tmp_filename = "misc/tmp_legacy_pred.json"
     dump_json(legacy_format, tmp_filename)
-    os.system("python legacy_evaluate.py {} {}".format(sys.argv[1], tmp_filename))
+    os.system("python2 legacy_eval.py {} {}".format(sys.argv[1], tmp_filename))
     os.remove(tmp_filename)
 
 if __name__ == "__main__":

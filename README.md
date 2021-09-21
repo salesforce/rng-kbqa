@@ -249,7 +249,7 @@ This will generate top-k decoded logical forms stored at `misc/webqsp_test_topk_
 
 Having the decoded top-k predictions, we'll go down the top-k list, execute the logical form one by one until we find one logical form return valid answers.
 
-`python eval_topk_prediction.py --split test --pred_file misc/wepqsp_test_topk_generations.json`
+`python eval_topk_prediction.py --split test --pred_file misc/webqsp_test_topk_generations.json`
 
 Prediction result will be stored (in GrailQA prediction format) to `misc/webqsp_test_final_results.txt`.
 
