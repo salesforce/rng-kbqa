@@ -173,3 +173,4 @@ dmypy.json
 !/LICENSE.txt
 
 .idea
+.DS_Store

@@ -1,6 +1,26 @@
-# RnG-KBQA
+# RNG-KBQA: Generation Augmented Iterative Ranking for Knowledge Base Question Answering
 
-Code for RnG-KBQA: Rank-and-Generate Approach for Question Answering over Knowledge Base.
+Authors: [Xi Ye](https://www.cs.utexas.edu/~xiye/), [Semih Yavuz](https://scholar.google.co.uk/citations?user=krh3p8AAAAAJ&hl=en), Kazuma Hashimoto, Yingbo Zhou and Caiming Xiong
+
+
+## Abstract
+
+![main figure](/figures/rng_kbqa.png)
+
+Existing KBQA approaches, despite achieving strong performance on i.i.d. test data, often struggle in generalizing to 
+questions involving unseen KB schema items. Prior rankingbased approaches have shown some success in generalization, 
+but suffer from the coverage issue. We present RnG-KBQA, a Rank-andGenerate approach for KBQA, which remedies the 
+coverage issue with a generation model while preserving a strong generalization capability. Our approach first uses a 
+contrastive ranker to rank a set of candidate logical forms obtained by searching over the knowledge graph. It then 
+introduces a tailored generation model conditioned on the question and the top-ranked candidates to compose the final 
+logical form. We achieve new state-ofthe-art results on GRAILQA and WEBQSP datasets. In particular, our method 
+surpasses the prior state-of-the-art by a large margin on the GRAILQA leaderboard. In addition, RnGKBQA outperforms all 
+prior approaches on the popular WEBQSP benchmark, even including the ones that use the oracle entity linking. The 
+experimental results demonstrate the effectiveness of the interplay between ranking and generation, which leads to the 
+superior performance of our proposed approach across all settings with especially strong improvements in zero-shot 
+generalization.
+
+Paper link: https://arxiv.org/pdf/2109.08678.pdf
 
 
 ## Requirements
@@ -50,13 +70,13 @@ We use the NER system (under directory `entity_linking` and `entity_linker`) fro
 
 Please download the following checkpoints for entity disambiguation, candidate ranking, and augmented generation checkpoints, unzip and put them under `checkpoints/` directory
 
-* Entity Disambiguation: [grail_bert_entity_disamb](https://storage.cloud.google.com/sfr-rng-kbqa-data-research/model_release/grail_bert_entity_disamb.zip) 
-* Candidate Ranking: [grail_bert_ranking](https://storage.cloud.google.com/sfr-rng-kbqa-data-research/model_release/grail_bert_ranking.zip) 
-* Augmented Generation: [grail_t5_generation](https://storage.cloud.google.com/sfr-rng-kbqa-data-research/model_release/grail_t5_generation.zip) 
+* Entity Disambiguation: [grail_bert_entity_disamb](https://storage.googleapis.com/sfr-rng-kbqa-data-research/model_release/grail_bert_entity_disamb.zip) 
+* Candidate Ranking: [grail_bert_ranking](https://storage.googleapis.com/sfr-rng-kbqa-data-research/model_release/grail_bert_ranking.zip) 
+* Augmented Generation: [grail_t5_generation](https://storage.googleapis.com/sfr-rng-kbqa-data-research/model_release/grail_t5_generation.zip) 
 
 **KB Cache**
 
-We attach the cache of query results from KB, which can help save some time. Please download the [cache file for grailqa](https://storage.cloud.google.com/sfr-rng-kbqa-data-research/KB_cache/grail.zip), unzip and put them under `cache/`, so that we have `cache/grail-LinkedRelation.bin` and `cache/grail-TwoHopPath.bin` in the place.
+We attach the cache of query results from KB, which can help save some time. Please download the [cache file for grailqa](https://storage.googleapis.com/sfr-rng-kbqa-data-research/KB_cache/grail.zip), unzip and put them under `cache/`, so that we have `cache/grail-LinkedRelation.bin` and `cache/grail-TwoHopPath.bin` in the place.
 
 ---
 
@@ -173,12 +193,12 @@ Please make a copy of the official evaluation script (`eval/eval.py` in the [Web
 
 Please download the following checkpoints for candidate ranking, and augmented generation checkpoints, unzip and put them under `checkpoints/` directory
 
-* Candidate Ranking: [webqsp_bert_ranking](https://storage.cloud.google.com/sfr-rng-kbqa-data-research/model_release/webqsp_bert_ranking.zip) 
-* Augmented Generation: [webqsp_t5_generation](https://storage.cloud.google.com/sfr-rng-kbqa-data-research/model_release/webqsp_t5_generation.zip) 
+* Candidate Ranking: [webqsp_bert_ranking](https://storage.googleapis.com/sfr-rng-kbqa-data-research/model_release/webqsp_bert_ranking.zip) 
+* Augmented Generation: [webqsp_t5_generation](https://storage.googleapis.com/sfr-rng-kbqa-data-research/model_release/webqsp_t5_generation.zip) 
 
 **KB Cache**
 
- Please download the [cache file for webqsp](https://storage.cloud.google.com/sfr-rng-kbqa-data-research/KB_cache/webqsp.zip), unzip and put them under `cache/` so that we have `cache/webqsp-LinkedRelation.bin` and `cache/webqsp-TwoHopPath.bin` in the place.
+ Please download the [cache file for webqsp](https://storage.googleapis.com/sfr-rng-kbqa-data-research/KB_cache/webqsp.zip), unzip and put them under `cache/` so that we have `cache/webqsp-LinkedRelation.bin` and `cache/webqsp-TwoHopPath.bin` in the place.
 
 ---
 
@@ -242,6 +262,18 @@ You can then use official WebQSP (only modified in I/O) evaluate script to run e
 #### Training Models
 We already attached pretrained-models ready for running inference. If you'd like to train your own models please checkout the `README` at `/WebQSP` folder.
 
+
+## Citation
+```
+@misc{ye2021rngkbqa,
+    title={RnG-KBQA: Generation Augmented Iterative Ranking for Knowledge Base Question Answering}, 
+    author={Xi Ye and Semih Yavuz and Kazuma Hashimoto and Yingbo Zhou and Caiming Xiong},
+    year={2021},
+    eprint={2109.08678},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
 
 ## Questions?
 For any questions, feel free to open issues, or shoot emails to
