@@ -265,13 +265,11 @@ We already attached pretrained-models ready for running inference. If you'd like
 
 ## Citation
 ```
-@misc{ye2021rngkbqa,
+@inproceedings{ye2021rngkbqa,
     title={RnG-KBQA: Generation Augmented Iterative Ranking for Knowledge Base Question Answering}, 
     author={Xi Ye and Semih Yavuz and Kazuma Hashimoto and Yingbo Zhou and Caiming Xiong},
     year={2021},
-    eprint={2109.08678},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+    booktitle = "Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL)",
 }
 ```
 
