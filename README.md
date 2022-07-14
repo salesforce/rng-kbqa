@@ -268,7 +268,7 @@ We already attached pretrained-models ready for running inference. If you'd like
 @inproceedings{ye2021rngkbqa,
     title={RnG-KBQA: Generation Augmented Iterative Ranking for Knowledge Base Question Answering}, 
     author={Xi Ye and Semih Yavuz and Kazuma Hashimoto and Yingbo Zhou and Caiming Xiong},
-    year={2021},
+    year={2022},
     booktitle = "Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL)",
 }
 ```
